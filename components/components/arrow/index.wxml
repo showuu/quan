@@ -1,0 +1,1 @@
+<view class="arrow" style="width:{{arrowLength}};height:{{arrowLength}};border-width:{{borderWidth}} {{borderWidth}} 0 0;border-color:{{color}};transform: rotate({{rotate}}deg)" />

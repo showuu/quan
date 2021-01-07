@@ -1,0 +1,8 @@
+<view style="display:flex;height:{{_height}}">
+    <view wx:for="{{length}}" wx:key="index" class="num_box_wrapper" data-index="{{index}}" bindtap="onTap">
+        <view class="num_box" style="{{type === 'underline' ? 'border-bottom: 2px solid' : 'border: 2px solid'}};border-color: {{cursor === index ? activeColor : color}};margin-left:{{_gutter}}">
+            {{value[index]}}
+        </view>
+    </view>
+</view>
+<input class="shadow_input" model:value="{{value}}" type="number" maxlength="{{length}}" focus="{{focus}}" hold-keyboard bindinput="onShadowinput" bindblur="onShadowBlur" />

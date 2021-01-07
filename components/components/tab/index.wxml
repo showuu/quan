@@ -1,0 +1,11 @@
+<view class="tab tab-class {{active ? 'tab-active-class' : ''}}" style="height:{{tabHeight}};{{tabStyle}}" data-index="{{index}}" bindtap="onTap">
+  <text wx:if="{{title}}" class="ellipsis" style="-webkit-line-clamp:{{lineClamp}}">{{title}}</text>
+  <block wx:else>
+    <block wx:if="{{active}}">
+      <slot name="active-tab"></slot>
+    </block>
+    <block wx:else>
+      <slot name="tab"></slot>
+    </block>
+  </block>
+</view>

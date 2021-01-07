@@ -1,0 +1,6 @@
+<scroll-view hidden="{{hidden}}" scroll-x scroll-left="{{scrollLeft}}" scroll-with-animation>
+    <view class="tabs-container tabs-container-class" style="{{tabsContainerStyle}}" bindtabtap="onTabTap">
+        <slot></slot>
+        <view wx:if="{{line}}" class="line" style="{{lineStyle}};width:{{lineWidth}};height:{{lineHeight}}"></view>
+    </view>
+</scroll-view>

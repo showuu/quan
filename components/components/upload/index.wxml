@@ -1,0 +1,17 @@
+<view class="container">
+    <view wx:for="{{files}}" wx:key="index" class="cell" style="width:{{hasInput ? '100%' : 'auto'}}">
+        <view class="upload_file_wrapper" data-index="{{index}}" data-url="{{item.url}}" bindtap="priviewFile">
+            <image wx:if="{{item.fileType === 'image'}}" class="upload_file" src="{{item.url}}" data-index="{{index}}" mode="aspectFill" />
+            <video wx:elif="{{item.fileType === 'video'}}" class="upload_file" src="{{item.url}}" controls="{{false}}" show-center-play-btn="{{false}}" data-index="{{index}}" />
+            <view class="op_area">
+                <image class="op_icon" src="/images/file_delete.png" mode="widthFix" data-index="{{index}}" catchtap="deleteFile" />
+                <image class="op_icon" src="/images/file_replace.png" mode="widthFix" data-index="{{index}}" catchtap="replaceFile" />
+            </view>
+        </view>
+        <input wx:if="{{hasInput}}" class="border_input" value="{{item.inputValue}}" type="text" placeholder="{{item.placeholder}}" data-index="{{index}}" bindinput="onInput" />
+    </view>
+    <view wx:if="{{!max || files.length < max}}" class="upload_area" bindtap="chooseFile">
+        <image class="upload_icon" src="{{fileType === 'image' ? '/images/upload_photo.png' : '/images/upload_video.png'}}" mode="widthFix" />
+        <text class="upload_txt">{{uploadText}}</text>
+    </view>
+</view>
