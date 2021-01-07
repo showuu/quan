@@ -1,0 +1,25 @@
+.tabs-container {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  text-align: center;
+  user-select: none;
+}
+.tab {
+  height: 100%;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 1; */
+  -webkit-box-orient: vertical;
+}
+.line {
+  position: absolute;
+  bottom: 10rpx;
+  border-radius: 10rpx;
+}

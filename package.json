@@ -1,0 +1,15 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "q-weapp-observer": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tq",
+  "license": "ISC"
+}

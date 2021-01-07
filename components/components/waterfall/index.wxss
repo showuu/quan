@@ -1,0 +1,43 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  padding: 20rpx;
+}
+.column_view {
+  float: left;
+}
+.article_wrapper {
+  position: relative;
+  margin: 10rpx;
+  animation: 1s fadein;
+}
+.img {
+  width: 100%;
+  border-radius: 10rpx;
+}
+.txt_wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+.txt {
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color: #fff;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

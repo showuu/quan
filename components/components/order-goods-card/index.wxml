@@ -1,0 +1,18 @@
+<view class="flex order-goods-card" bindtap="navigateToTGoods">
+    <image class="goods-img" src="{{goodsImg}}" mode="aspectFit"></image>
+    <view class="goods-desc">
+        <view class="flex justify-between">
+            <view class="goods-name">
+                <view>{{goodsName}}</view>
+                <view class="same-day-shipping-tip" wx:if="{{sameDayShipping}}">(支持当日达)</view>
+            </view>
+            <view>
+                <view>￥{{memberPrice ? memberPrice + '(会员价)' : goodsPrice}}{{points ? '+' + points + '积分' : ''}}</view>
+                <view class="cart-num">×{{cartNum}}</view>
+            </view>
+        </view>
+        <view wx:for="{{goodsSpec}}" wx:key="itemId" class="goods-spec">
+            {{item.catName}}:{{item.itemName}}
+        </view>
+    </view>
+</view>

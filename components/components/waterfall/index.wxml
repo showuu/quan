@@ -1,0 +1,10 @@
+<view class="container">
+    <view wx:for="{{columnList}}" wx:key="index" wx:for-item="column" class="column_view" style="width:{{100 / columnList.length}}%">
+        <view wx:for="{{column}}" wx:key="articleId" class="article_wrapper article_wrapper--show" data-article-id="{{item.articleId}}" bindtap="onCardTap">
+            <image class="img" src="{{item.src}}" mode="widthFix" />
+            <view class="txt_wrapper">
+                <text class="txt">{{item.title}}</text>
+            </view>
+        </view>
+    </view>
+</view>

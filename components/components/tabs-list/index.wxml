@@ -1,0 +1,16 @@
+<wxs module="type" src="./index.wxs" />
+<scroll-view hidden="{{hidden}}" scroll-x scroll-left="{{scrollLeft}}" scroll-with-animation>
+    <view class="tabs-container tabs-container-class" style="height:{{tabHeightValue + tabHeightUnit}};{{tabsContainerStyle}}">
+        <view wx:for="{{tabList}}" wx:key="index" class="tab {{ current == index ? 'tab-active-class' : 'tab-class' }}" style="{{tabStyle}}" data-index="{{index}}" bindtap="toggleTabCard">
+            <view wx:if="{{type.isString(item.title)}}" class="ellipsis" style="-webkit-line-clamp:{{lineClamp}}">
+                {{item.title}}
+            </view>
+            <block wx:else>
+                <view wx:for="{{item.title}}" wx:for-item="title" wx:key="index" class="ellipsis" style="-webkit-line-clamp:{{lineClamp}}">
+                    {{title}}
+                </view>
+            </block>
+        </view>
+        <view wx:if="{{line}}" class="line" style="{{lineStyle}};width:{{lineWidthValue + lineWidthUnit}};height:{{lineHeightValue + lineHeightUnit}}"></view>
+    </view>
+</scroll-view>

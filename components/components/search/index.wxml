@@ -1,0 +1,7 @@
+<view class="search">
+    <view class="input-view">
+        <icon class="icon" type="search" size="13" color="#666" />
+        <input class="input" value="{{value}}" type="text" placeholder="{{placeholder}}" placeholder-class="search-input-placeholder" disabled="{{disabled}}" focus="{{focus}}" confirm-type="search" bindinput="onInput" bindconfirm="onConfirm" />
+    </view>
+    <button wx:if="{{!hideBtn}}" class="btn" bindtap="onSearch">搜索</button>
+</view>

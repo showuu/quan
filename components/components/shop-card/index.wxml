@@ -1,0 +1,35 @@
+<view class="shop-card" data-goods-id="{{shopId}}">
+    <view wx:if="{{tag || tag === 0}}" class="shop-tag" style="{{tagMap[tag].style}}">
+        {{tagMap[tag].name}}
+    </view>
+    <view class="header" bindtap="navigateToShop">
+        <image class="shop-avatar" src="{{shopImg}}" mode="scaleToFill" />
+        <view class="shop-info">
+            <view class="shop-desc">
+                <text class="shop-name">{{shopName}}</text>
+                <text wx:if="{{shopDesc}}" class="shop-intro">{{shopDesc}}</text>
+            </view>
+        </view>
+        <view>
+            <button class="btn" style="background:{{btnBackgroundColor}}" hover-class="button-hover" catchtap="onBtnTap">
+                {{btnText}}
+            </button>
+            <view class="follow-num" wx:if="{{followNum}}">{{followNum}}粉丝</view>
+        </view>
+    </view>
+    <slot name="middle" />
+    <view class="goods-gallery">
+        <view wx:for="{{goods}}" wx:key="goodsId" class="goods-item" data-goods-id="{{item.goodsId}}" bindtap="navigateToGoods">
+            <view class="goods-img-container">
+                <image class="goods-img" style="{{item.goodsName ? 'border-bottom-left-radius: 0;order-bottom-right-radius: 0;' : ''}}" src="{{item.goodsImg}}" mode="scaleToFill" />
+                <view wx:if="{{item.price}}" class="goods-price">
+                    <text class="price-symbol">￥</text>
+                    {{item.price}}
+                </view>
+            </view>
+            <view wx:if="{{item.goodsName}}" class="goods-name-container">
+                <text class="goods-name">{{item.goodsName}}</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "components": true,
+  "usingComponents": {
+    "sort-icon": "/components/sort-icon/index"
+  }
+}

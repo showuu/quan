@@ -1,0 +1,3 @@
+.tab-item-class {
+    font-weight:bold;
+}

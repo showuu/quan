@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.order-goods-card {
+  width: 100%;
+  padding: 10rpx 0;
+}
+.goods-img {
+  width: 150rpx;
+  height: 150rpx;
+}
+.goods-desc {
+  flex: 1;
+  padding: 0 10rpx;
+  font-size: 28rpx;
+}
+.goods-name {
+  flex-basis:60%;
+}
+.same-day-shipping-tip {
+  color: red;
+}
+.cart-num {
+  margin-top: 10rpx;
+  text-align: right;
+}
+.goods-spec {
+  color: #a6a6a6;
+  font-size: 28rpx;
+}

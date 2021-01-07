@@ -1,0 +1,13 @@
+<view hidden="{{hidden}}" class="action-sheet-item" bindtap="onTap">
+    <view class="content">
+        <view class="left">
+            <view class="item-label">{{label}}</view>
+            <slot name="description"></slot>
+        </view>
+        <view class="right">
+            <view class="selected-item-name">{{selectedItem.name}}</view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <slot name="tips"></slot>
+</view>

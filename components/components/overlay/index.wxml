@@ -1,0 +1,3 @@
+<view class="overlay {{show ? 'overlay-show' : 'overlay-hide'}}" style="z-index:{{zIndex}}; background:{{bgColor}}; transition: all {{duration}}s ease-in-out; {{style}}" catchtouchmove="true">
+    <slot></slot>
+</view>

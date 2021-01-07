@@ -1,0 +1,4 @@
+<view>
+    <view class="up" style="margin-bottom:{{gap}}px;border-width:0 {{width}}px {{width}}px {{width}}px;border-color:{{upIconColor}}"></view>
+    <view class="down" style="border-width:{{width}}px {{width}}px 0 {{width}}px;border-color:{{downIconColor}}"></view>
+</view>

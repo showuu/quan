@@ -1,0 +1,6 @@
+<tabs class="tab-item-class" tab-list="{{tabList}}" hidden="{{hideTab}}" current="{{current}}" height="100rpx" line-width="{{lineWidth}}" line-height="{{lineHeight}}" line-color="{{lineColor}}" bindchange="onTabChange" />
+<swiper current="{{current}}" style="height:{{swiperHeight}}" bindchange="onSwiperChange">
+    <swiper-item wx:for="{{tabList}}" wx:key="index">
+        <slot name="{{item.name}}"></slot>
+    </swiper-item>
+</swiper>

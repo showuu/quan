@@ -1,0 +1,14 @@
+<view class="goods-card" data-goods-id="{{goodsId}}" bindtap="navigateToTGoods">
+  <view wx:if="{{tag || tag === 0}}" class="goods-tag" style="{{tagMap[tag].style}}">
+    {{tagMap[tag].name}}
+  </view>
+  <image class="goods-img" src="{{goodsImg}}" mode="scaleToFill" />
+  <view class="goods-name">{{goodsName}}</view>
+  <view class="goods-info">
+    <view class="price">
+      <text class="price-symbol">￥</text>
+      {{shopPrice}}
+    </view>
+    <text class="area">{{area}}</text>
+  </view>
+</view>

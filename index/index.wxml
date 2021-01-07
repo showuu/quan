@@ -1,0 +1,25 @@
+<view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档</view>
+<view style="width:400rpx">
+    <tab height="100rpx" line-clamp="abc" title="测试是否溢w出,发发哈罚款发发尽快发范吉奥i就发哦i"></tab>
+</view>
+<view style="width:400rpx">
+    <tab title="道"></tab>
+    <text>{{a.age}}</text>
+    <text>{{a.name}}</text>
+</view>
+<!-- <view style="width:400rpx">
+    <tab height="100rpx">
+        <view slot="tab">
+            <view>我是第一行</view>
+            <view>我是第二行</view>
+        </view>
+        <view slot="active-tab">
+            <view>我是第一行</view>
+            <view>我是第二行</view>
+        </view>
+    </tab>
+</view> -->
+
+<!-- <tabs>
+    <tab wx:for="{{tabsList}}" wx:key="id" title="{{item.title}}"></tab>
+</tabs> -->

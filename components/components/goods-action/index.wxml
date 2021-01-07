@@ -1,0 +1,21 @@
+<view class="goods-action">
+    <view class="actions-view">
+        <view class="action-item" bindtap="navigateToIndex">
+            <image class="action-icon" src="/image/shouye.png" mode="widthFix" />
+            <text>首页</text>
+        </view>
+        <view class="action-item" bindtap="navigateToKefu">
+            <image class="action-icon" src="/image/kefu.png" mode="widthFix" />
+            <text>客服</text>
+        </view>
+        <view class="action-item" bindtap="toggleFavStatus">
+            <image class="action-icon" hidden="{{!favGoodId}}" src="/image/guanzhu-active.png" mode="widthFix" />
+            <image class="action-icon" hidden="{{favGoodId}}" src="/image/guanzhu.png" mode="widthFix" />
+            <text>关注</text>
+        </view>
+    </view>
+    <view class="operation-view">
+        <button class="cart-btn"hover-class="button-hover" bindtap="onCartBtnTap">加入购物车</button>
+        <button class="buy-btn" hover-class="button-hover" bindtap="onBuyBtnTap">立即购买</button>
+    </view>
+</view>

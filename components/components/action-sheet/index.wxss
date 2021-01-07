@@ -1,0 +1,32 @@
+.action-sheet-item {
+  padding: 20rpx 12rpx 20rpx 0;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-label {
+  font-size: 30rpx;
+  color: #59595c;
+}
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+.selected-item-name {
+  color: #777;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.arrow {
+  width: 18rpx;
+  height: 18rpx;
+  margin-left: 10rpx;
+  border-right: 4rpx solid #848a97;
+  border-bottom: 4rpx solid #848a97;
+  transform: rotate(-45deg);
+}

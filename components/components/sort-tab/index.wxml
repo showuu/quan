@@ -1,0 +1,8 @@
+<view class="sort-tab">
+    <view wx:for="{{sortList}}" wx:key="name" class="sort-item" style="{{index === 0 ? firstBorderStyle : index === sortList.length - 1 ? lastBorderStyle : borderStyle}}" data-name="{{item.name}}" bindtap="toggleSortTab">
+        <view style="color:{{item.order ? activeTextColor: textColor}};font-weight:{{item.order && activeTextBold ? 'bold': ''}}">
+            {{item.title}}
+        </view>
+        <sort-icon id="sort-{{item.name}}" width="{{iconWidth}}" color="{{iconColor}}" active-color="{{activeIconColor}}" gap="{{gap}}" />
+    </view>
+</view>

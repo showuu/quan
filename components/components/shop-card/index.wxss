@@ -1,0 +1,132 @@
+.shop-card {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: 10rpx;
+  padding: 30rpx;
+  background-image: url('https://sbsmam.csztv.com/manual/202007/14/38/387b19803a3cbe36ca1b1260428c69ed.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.shop-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  border-radius: 10rpx 0 30rpx 0;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.shop-info {
+  flex: 1;
+  padding-left: 30rpx;
+  display: flex;
+}
+.shop-desc {
+  display: flex;
+  flex-direction: column;
+}
+.shop-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.shop-intro {
+  max-width: 200rpx;
+  font-size: 26rpx;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn {
+  height: 46rpx;
+  line-height: 46rpx;
+  border-radius: 30rpx;
+  padding: 0 24rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+}
+.button-hover {
+  opacity: 0.8;
+}
+.follow-num {
+  text-align: center;
+  font-size: 20rpx;
+  color: #fff;
+}
+.goods-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30rpx;
+}
+.goods-item {
+  margin-right: 2%;
+  width: 32%;
+  margin-bottom: 20rpx;
+}
+.goods-item:last-child {
+  margin-right: 0;
+  width: 32%;
+  margin-bottom: 20rpx;
+}
+.goods-img-container {
+  position: relative;
+  height: 200rpx;
+}
+.goods-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.goods-price {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4rpx 10rpx;
+  border-bottom-left-radius: 10rpx;
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+}
+.price-symbol {
+  font-size: 18rpx;
+}
+.goods-name-container {
+  box-sizing: border-box;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 12rpx;
+  border: 1px solid #dcdcdc;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  background-color: #fff;
+}
+.goods-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #888;
+}
